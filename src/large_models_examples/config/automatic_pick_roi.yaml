@@ -1,0 +1,8 @@
+/**:
+  ros__parameters:
+    pick_stop_pixel_coordinate:
+    - 349
+    - 356
+    place_stop_pixel_coordinate:
+    - 363
+    - 204
