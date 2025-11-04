@@ -36,7 +36,7 @@ LanderPi runs on a Raspberry Pi 5 + STM32 control system, packed with a 3D depth
 
 ### High-Precision Mapping & Navigation
 
-We equipped LanderPi with a TOF LiDAR that scans and maps environments down to centimeter-level accuracy. Want it to navigate to specific points, run multi-stop routes, or patrol an area on its own? No problem! If an obstacle pops up out of nowhere, LanderPi senses it in real-time, dodges smoothly, and recalculates the route automatically. Even in complex environments, LanderPi autonomously moves with confidence.
+We equipped [LanderPi](https://www.hiwonder.com/products/landerpi) with a TOF LiDAR that scans and maps environments down to centimeter-level accuracy. Want it to navigate to specific points, run multi-stop routes, or patrol an area on its own? No problem! If an obstacle pops up out of nowhere, LanderPi senses it in real-time, dodges smoothly, and recalculates the route automatically. Even in complex environments, LanderPi autonomously moves with confidence.
 
 <p align="center">
   <img src="./sources/images/5.png" alt="Mapping & Navigation" width="600"/>
@@ -68,7 +68,7 @@ Powered by a YOLOv11 deep learning model, LanderPi doesn't just see objects — 
 
 ## Fully Open Source, Free to Take
 
-Code sources are open — robot control, AI interaction, 3D vision, robotic arm control ... all here on GitHub. Use the existing modules as they are, or develop your own features on top of our framework. If you're excited to tinker with a robot that listens, thinks for itself, precisely acts — you're in the right place. We've also built full LanderPi tutorials and docs to help you. Just learn and develop it! Let's make robots cooler together.
+Code sources are open — robot control, AI interaction, 3D vision, robotic arm control ... all here on GitHub. Use the existing modules as they are, or develop your own features on top of our framework. If you're excited to tinker with a robot that listens, thinks for itself, precisely acts — you're in the right place. We've also built full [LanderPi tutorials](https://www.hiwonder.com.cn/store/learn/180.html) and docs to help you. Just learn and develop it! Let's make robots cooler together.
 
 <p align="center">
   <img src="./sources/images/9.png" alt="Open Source Community" width="600"/>
