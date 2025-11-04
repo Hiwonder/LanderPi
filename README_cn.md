@@ -6,58 +6,83 @@
   <img src="./sources/images/image.webp" alt="LanderPi Logo" width="400"/>
 </p>
 
-基于ROS2的复合型机器人系统，集成机械臂、激光雷达、3D深度相机等高性能组件，支持SLAM导航、自主抓取、语音交互等高级AI功能。
+## LanderPi：一个能听懂人话、自己动脑的机器人学习和开发平台
 
-## 产品介绍
+我常常在想，能不能让机器人像人一样，听到「把红色积木拿过来」就能自主找到，精准规划动作？这就是LanderPi的起点——一个真正能听懂指令、自己思考怎么执行的机器人平台。这也是一个让热爱学习AI的学生、开发者，工程师们都能轻松学习先进的AI机器人技术，并能创作出更多AI项目的机器人开发平台。
 
-LanderPi是幻尔面向ROS教育场景开发的复合型机器人，它支持麦克纳姆轮、阿克曼、履带三种底盘配置，集成了树莓派5、高精度激光雷达、3D深度相机、3D深度视觉机械臂、赛事级轮胎等高性能配件，可以实现机器人运动控制、遥控通讯、SLAM建图导航、路径规划、动态避障、无人驾驶、体感控制、机械臂MoveIt仿真、手眼合一自主抓取、自主导航搬运、自然语言交互等应用。
+<p align="center">
+  <img src="./sources/images/1.png" alt="LanderPi 概览" width="600"/>
+</p>
 
-LanderPi同时部署了多模态AI大模型，结合AI语音交互盒，它可以理解环境、规划行动并灵活执行任务，能实现更多高阶具身智能应用。
+## 多模态AI大模型+ROS2
+
+LanderPi基于 ROS2 开发，部署了多模态AI大模型，你只需要用自然语言发出指令，它就能自己"听懂指令-解析环境-规划路径-精准操作"。不管是「追踪牛奶旁白的物品」还是「分拣数量最多的色块」，它都能理解你的意图并自主完成。
+
+<p align="center">
+  <img src="./sources/images/2.png" alt="多模态AI + ROS2" width="600"/>
+</p>
+
+### 强大的硬件配置
+
+LanderPi采用树莓派5与STM32构建出控制系统，并搭载了3D深度相机、6DOF机械臂、TOF激光雷达、AI语音交互盒，为机器人建立了完整的感知能力。你还可以根据应用场景，选择阿克曼底盘、麦克纳姆轮或坦克履带三种底盘配置中的任何一种。
+
+<p align="center">
+  <img src="./sources/images/3.png" alt="硬件配置 1" width="600"/>
+</p>
+
+<p align="center">
+  <img src="./sources/images/4.png" alt="硬件配置 2" width="600"/>
+</p>
+
+### 高精度建图与导航
+
+我们为LanderPi配备了TOF激光雷达，能够以厘米级精度扫描和建图环境。想让它导航到特定位置、执行多点路线或自主巡逻？不成问题！当突然出现障碍物时，LanderPi会实时感知、平滑躲避，并自动重新规划路线。即使在复杂环境中，LanderPi也能自信地自主运动。
+
+<p align="center">
+  <img src="./sources/images/5.png" alt="建图与导航" width="600"/>
+</p>
+
+### 3D视觉精准抓取
+
+LanderPi配备的高精度3D相机能够检测物体的颜色、位置和距离。这个相机安装在机械臂末端，配合我们的逆运动学解决方案，实现了真正的手眼协调。无论物体摆放多么凌乱，LanderPi都能精准识别目标并拾起。
+
+<p align="center">
+  <img src="./sources/images/6.png" alt="3D视觉抓取" width="600"/>
+</p>
+
+### 用AI和你的机器人对话
+
+LanderPi搭载多模态AI大模型，不仅能听到你的声音，更能理解当前的场景。不管你说的是「把红色的东西拿过来」这种简单指令，还是「找出所有蓝色物体中最大的那个」这种复杂条件，它都能转换成自己的理解，然后自己想办法执行。
+
+<p align="center">
+  <img src="./sources/images/7.png" alt="AI语音交互" width="600"/>
+</p>
+
+### YOLOv11深度学习算法
+
+基于YOLOv11的深度学习算法为LanderPi提供了强大的物体识别与分类能力。结合3D视觉系统，让机器人不仅能"看到"物体，更能"理解"它们，实现真正的智能视觉决策。
+
+<p align="center">
+  <img src="./sources/images/8.png" alt="YOLOv11视觉识别" width="600"/>
+</p>
+
+## 完全开源，代码随便拿，随便改！
+
+我们的所有代码完全开放：从机器人控制、AI大模型交互、3D视觉识别和机械臂控制，全部放在GitHub上。你可以直接使用现有模块，也可以基于我们的框架开发新功能。
+
+如果你也想折腾一个能听懂人话、自己动脑的机器人，欢迎来我们的代码库看看。这里有完整的使用教程和开发文档，让我们一起把机器人变得更酷。
+
+<p align="center">
+  <img src="./sources/images/9.png" alt="开源社区" width="600"/>
+</p>
 
 ## 官方资源
 
 ### Hiwonder官方
-- **官方网站**: [https://www.hiwonder.net/](https://www.hiwonder.net/)
+- **官方网站**: [https://www.hiwonder.com/](https://www.hiwonder.com/)
 - **产品页面**: [https://www.hiwonder.com/products/landerpi](https://www.hiwonder.com/products/landerpi)
 - **官方文档**: [https://docs.hiwonder.com/projects/LanderPi/en/latest/](https://docs.hiwonder.com/projects/LanderPi/en/latest/)
 - **技术支持**: support@hiwonder.com
-
-## 主要功能
-
-### AI视觉与导航
-- **SLAM建图** - 实时同步定位与建图
-- **路径规划** - 智能路线规划和导航
-- **动态避障** - 实时障碍物检测与避障
-- **无人驾驶** - 具备先进导航功能的自动驾驶能力
-- **3D深度感知** - 深度相机集成的立体视觉
-
-### 机械臂集成
-- **3D深度视觉机械臂** - 先进的操作能力
-- **MoveIt仿真** - 运动规划和控制仿真
-- **手眼合一** - 基于视觉反馈的自主抓取
-- **自主导航搬运** - 拾取和放置操作
-
-### 智能控制
-- **多底盘支持** - 麦克纳姆轮、阿克曼和履带
-- **体感控制** - 直观的人机交互
-- **遥控通讯** - 无线控制和监控
-- **自然语言交互** - AI驱动的语音命令
-- **多模态AI集成** - 先进的具身智能
-
-### 编程接口
-- **ROS2集成** - 完整的机器人操作系统2支持
-- **Python编程** - 全面的Python SDK
-- **AI语音交互** - 自然语言处理能力
-- **仿真环境** - 完整的开发和测试平台
-
-## 硬件配置
-- **处理器**: 树莓派5
-- **操作系统**: ROS2兼容Linux系统
-- **视觉系统**: 3D深度相机 + 高精度激光雷达
-- **操作系统**: 3D深度视觉机械臂
-- **底盘**: 支持麦克纳姆轮、阿克曼和履带三种配置
-- **轮胎**: 赛事级高性能轮胎
-- **AI集成**: 多模态AI大模型配AI语音交互盒
 
 ## 项目结构
 
@@ -66,7 +91,7 @@ landerpi/
 ├── src/                    # 源代码模块
 ├── command                 # 命令参考和工具
 └── sources/                # 资源和文档
-    └── images/             # 产品图像和媒体
+    └── images/             # 产品图片和媒体
 ```
 
 ## 版本信息
@@ -77,7 +102,7 @@ landerpi/
 - [ROS2](https://ros.org/) - 机器人操作系统2
 - [MoveIt](https://moveit.ros.org/) - 运动规划框架
 - [OpenCV](https://opencv.org/) - 计算机视觉库
-- [PCL](https://pointclouds.org/) - 点云库
+- [YOLOv11](https://github.com/ultralytics/yolov11) - 目标检测框架
 
 ---
 
